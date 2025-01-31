@@ -1,0 +1,102 @@
+.juri-card {
+  width: 260px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.juri-card--2,
+.juri-card--3,
+.juri-card--4 {
+  display: none;
+}
+
+.juri-card__img-wrapper {
+  position: relative;
+}
+
+.juri-card__img {
+  display: block;
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.juri-card__name {
+  font-size: 22px;
+  color: $base-white;
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.juri-card:hover .juri-card__name,
+.juri-card:focus .juri-card__name {
+  display: none;
+}
+
+.juri-card__info-wrapper {
+  position: absolute;
+  background-color: rgba($color: $base, $alpha: 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  color: $base-white;
+}
+
+.juri-card:hover .juri-card__info-wrapper,
+.juri-card:focus .juri-card__info-wrapper {
+  display: block;
+}
+
+.juri-card__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.juri-card__info {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.juri-card__list {
+  list-style: disc;
+}
+
+.juri-card__item {
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .juri-card {
+    display: block;
+    margin: 0;
+    width: 260px;
+    height: 300px;
+  }
+
+  .juri-card--3,
+  .juri-card--4 {
+    display: none;
+  }
+
+  .juri-card__img {
+    width: 260px;
+    height: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .juri-card {
+    display: block;
+  }
+}

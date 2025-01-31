@@ -1,0 +1,144 @@
+.video {
+  position: relative;
+  width: 320px;
+  height: 170px;
+  margin: 0 auto;
+}
+
+.video__img {
+  display: block;
+  width: 320px;
+  height: 170px;
+}
+
+.video__btn {
+  color: $base-white;
+  cursor: pointer;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(237, 2, 51, 0.3);
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+
+  &:focus {
+    border: 3px solid $base;
+  }
+
+  &:focus::before {
+    background-image: none;
+    background-color: #c8c9cc;
+  }
+
+  &:focus .video__btn-icon {
+    color: $base;
+  }
+
+  &:hover {
+    border: 3px solid rgba($color: $base, $alpha: 0.6);
+  }
+
+  &:hover .video__btn-icon {
+    color: rgba($color: $base, $alpha: 0.6);
+  }
+
+  &:hover::before {
+    background-image: none;
+    background-color: $base-white;
+  }
+
+  &:active {
+    border: 3px solid $base;
+  }
+
+  &:active::before {
+    background-image: none;
+    background-color: $base-white;
+  }
+
+  &:active .video__btn-icon {
+    color: $base;
+  }
+
+  &:disabled {
+    border: 3px solid rgba($color: $base, $alpha: 0.3);
+    cursor: not-allowed;
+  }
+
+  &:disabled::before {
+    background-image: none;
+    background-color: $base-white;
+  }
+
+  &:disabled .video__btn-icon {
+    color: rgba($color: $base, $alpha: 0.3);
+  }
+}
+
+.video__btn-icon {
+  position: absolute;
+  width: 13px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-42%, -50%);
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    margin-top: -121px;
+    width: 270px;
+    height: 170px;
+  }
+
+  .video__img {
+    width: 270px;
+    height: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    margin: 0;
+    margin-top: -115px;
+    margin-right: auto;
+    width: 360px;
+    height: 230px;
+  }
+
+  .video__btn {
+    width: 100px;
+    height: 100px;
+
+    &::before {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  .video__btn-icon {
+    width: 17px;
+    height: 17px;
+    transform: translate(-38%, -50%);
+  }
+
+  .video__img {
+    width: 360px;
+    height: 230px;
+  }
+}
