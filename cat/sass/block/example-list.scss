@@ -1,0 +1,134 @@
+.example-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example-list__item {
+  border: 1px solid $border-example;
+  border-radius: 4px;
+  position: relative;
+  width: 124px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 11px;
+}
+
+.example-list__price {
+  color: $color-title;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.example-list__item--price {
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+.example-list__info {
+  color: $color-title;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.example-list__text {
+  font-size: 12px;
+  line-height: 12px;
+  background-color: $background-color-example;
+  padding: 0 5px;
+  margin: 0;
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+@media (min-width: $tablet-width) {
+  .example-list {
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 105px;
+  }
+
+  .example-list__item {
+    width: 160px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+  }
+
+  .example-list__info {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example-list__text {
+    font-size: 14px;
+    line-height: 14px;
+    bottom: -7px;
+    background-color: $background-color-page;
+  }
+
+  .example-list__text--weight {
+    min-width: 100px;
+  }
+
+  .example-list__text--day {
+    min-width: 130px;
+  }
+
+  .example-list__item--weight {
+    margin-right: 45px;
+  }
+
+  .example-list__item--price {
+    width: 180px;
+    text-align: left;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .example-list__price {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: end;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-list {
+    margin-bottom: 0;
+  }
+
+  .example-list__item--weight {
+    margin-right: 42px;
+  }
+
+  .example-list__text {
+    background-color: $background-color-example;
+  }
+
+  .example-list__item--price {
+    width: 100%;
+  }
+
+  .example-list__price {
+    text-align: left;
+    margin-top: 56px;
+  }
+
+  .example-list__price-text {
+    margin-right: 62px;
+  }
+}

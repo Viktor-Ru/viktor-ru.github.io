@@ -1,0 +1,63 @@
+.button {
+  border: none;
+  background-color: $background-color-button;
+  color: $color-button;
+  text-decoration: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+
+  &:hover {
+    background-color: $background-color-button-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--hero {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-transform: uppercase;
+  min-height: 24px;
+}
+
+.button--more {
+  background-color: $background-color-card;
+  color: $color-page;
+  display: block;
+
+  &:hover {
+    background-color: $border-menu;
+  }
+
+  &:active {
+    color: rgba(65, 65, 65, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--hero {
+    font-size: 20px;
+    line-height: 20px;
+    width: 225px;
+    margin-left: 89px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--hero {
+    margin-left: 80px;
+  }
+
+  .button--additional-card {
+    width: 225px;
+  }
+}
