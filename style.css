@@ -91,6 +91,16 @@ img {
   width: 290px;
   height: 500px;
   background-color: tomato;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-card__img--sedona {
+  background-image: url(img/sedona.jpg);
+}
+
+.projects-card__img--cat {
+  background-image: url(img/cat.jpg);
 }
 
 .projects-card__list {
