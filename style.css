@@ -81,6 +81,10 @@ img {
 
 /* projects-card */
 
+.projects-card {
+  border-bottom: solid 1px #000;
+}
+
 .projects-card__link {
   text-decoration: none;
   color: inherit;
@@ -90,6 +94,8 @@ img {
   display: block;
   width: 290px;
   height: 500px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   background-color: #82b3d3;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,6 +156,7 @@ img {
 
   .projects-card__img {
     margin: 16px auto;
+    border-radius: 5px;
   }
 }
 
