@@ -101,13 +101,18 @@ img {
   background-size: cover;
 }
 
-.projects-card__img--sedona {
-  background-image: url(img/sedona.jpg);
+.projects-card__img--fitness {
+  background-image: url(img/fitness.jpg);
 }
 
 .projects-card__img--cat {
   background-image: url(img/cat.jpg);
 }
+
+.projects-card__img--sedona {
+  background-image: url(img/sedona.jpg);
+}
+
 
 .projects-card__list {
   list-style: none;
