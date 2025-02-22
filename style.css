@@ -160,8 +160,13 @@ img {
   .projects-card {
     border: solid 1px #000;
     border-radius: 10px;
-    box-shadow: 0 0 20px #808080;
+    box-shadow: 0 0 20px #6b6b6b;
   }
+
+  .projects-card:hover {
+    box-shadow: 0 0 20px #292929;
+  }
+
 
   .projects-card__img {
     margin: 16px auto;
