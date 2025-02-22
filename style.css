@@ -105,6 +105,10 @@ img {
   background-image: url(img/fitness.jpg);
 }
 
+.projects-card__img--grink {
+  background-image: url(img/grink.jpg);
+}
+
 .projects-card__img--cat {
   background-image: url(img/cat.jpg);
 }
